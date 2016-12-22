@@ -1,0 +1,19 @@
+﻿  Stdafx.cpp
+c:\users\daniel\documents\visual studio 2015\projects\thompson\frontend\core\core.h(22): warning C4091: 'static ': ignored on left of 'core::regpatterns' when no variable is declared
+  AssemblyInfo.cpp
+  BookingData.cpp
+  Calendar.cpp
+Calendar.cpp(23): warning C4551: function call missing argument list
+  core.cpp
+  Filter.cpp
+  Room.cpp
+Room.cpp(33): warning C4101: 'line': unreferenced local variable
+  User.cpp
+  Generating Code...
+c:\users\daniel\documents\visual studio 2015\projects\thompson\frontend\core\user.cpp(39): warning C4700: uninitialized local variable 'v5' used
+c:\users\daniel\documents\visual studio 2015\projects\thompson\frontend\core\user.cpp(40): warning C4700: uninitialized local variable 'v6' used
+c:\users\daniel\documents\visual studio 2015\projects\thompson\frontend\core\user.cpp(41): warning C4700: uninitialized local variable 'v7' used
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  core.vcxproj -> C:\Users\Daniel\Documents\Visual Studio 2015\Projects\thompson\frontend\Debug\core.dll
+  core.vcxproj -> C:\Users\Daniel\Documents\Visual Studio 2015\Projects\thompson\frontend\Debug\core.pdb (Partial PDB)

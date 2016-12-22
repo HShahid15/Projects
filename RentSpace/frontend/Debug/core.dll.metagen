@@ -1,0 +1,80 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly core, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class core.BookingData: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getPeriod(Int32, Int32): PrivateScope, Public, HideBySig
+    getHour(Int32): PrivateScope, Public, HideBySig
+    getMinutes(Int32): PrivateScope, Public, HideBySig
+    debugPrint(): PrivateScope, Public, HideBySig
+Class core.Room: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(core.Room): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getRoomNum(): PrivateScope, Public, HideBySig
+    getCapacity(): PrivateScope, Public, HideBySig
+    getLibrary(): PrivateScope, Public, HideBySig
+    getFloor(): PrivateScope, Public, HideBySig
+    getBookings(): PrivateScope, Public, HideBySig
+    importRoomJSON(String): PrivateScope, Public, HideBySig
+    exportRoomJSON(): PrivateScope, Public, HideBySig
+    loadBookingData(): PrivateScope, Public, HideBySig
+    debugPrint(): PrivateScope, Public, HideBySig
+Class core.Filter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    updatePeriod(Int32, Int32): PrivateScope, Public, HideBySig
+    updateDate(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    updateLibrary(Int32): PrivateScope, Public, HideBySig
+    updateFloor(Int32): PrivateScope, Public, HideBySig
+    updateCapacity(Int32): PrivateScope, Public, HideBySig
+    matchFilter(Room): PrivateScope, Public, HideBySig
+    getPeriodStart(): PrivateScope, Public, HideBySig
+    getPeriodEnd(): PrivateScope, Public, HideBySig
+    getLibrary(): PrivateScope, Public, HideBySig
+    getFloor(): PrivateScope, Public, HideBySig
+    getCapacity(): PrivateScope, Public, HideBySig
+    debugPrint(): PrivateScope, Public, HideBySig
+Class core.Calendar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getRoom(Int32): PrivateScope, Public, HideBySig
+    getSlots(): PrivateScope, Public, HideBySig
+    refreshRooms(Filter, String): PrivateScope, Public, HideBySig
+    updateDate(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    debugPrint(): PrivateScope, Public, HideBySig
+Class core.User: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, Int32, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setPermissions(Int32): PrivateScope, Public, HideBySig
+    setFaculty(Int32): PrivateScope, Public, HideBySig
+    setHours(Int32): PrivateScope, Public, HideBySig
+    setBookings(Int32): PrivateScope, Public, HideBySig
+    setUserName(String): PrivateScope, Public, HideBySig
+    setPassword(String): PrivateScope, Public, HideBySig
+    setFirstName(String): PrivateScope, Public, HideBySig
+    setLastName(String): PrivateScope, Public, HideBySig
+    getUsername(): PrivateScope, Public, HideBySig
+    getPassword(): PrivateScope, Public, HideBySig
+    getHours(): PrivateScope, Public, HideBySig
+    importUserJSON(String): PrivateScope, Public, HideBySig
+    exportUserJSON(): PrivateScope, Public, HideBySig
+    loseHours(Int32): PrivateScope, Public, HideBySig
+    gainHours(Int32): PrivateScope, Public, HideBySig
+    isStudent(): PrivateScope, Public, HideBySig
+    isTA(): PrivateScope, Public, HideBySig
+    isProf(): PrivateScope, Public, HideBySig
+    isFaculty(): PrivateScope, Public, HideBySig
+    debugPrint(): PrivateScope, Public, HideBySig

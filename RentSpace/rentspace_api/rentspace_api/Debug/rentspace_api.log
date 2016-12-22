@@ -1,0 +1,4 @@
+﻿cl : Command line warning D9002: ignoring unknown option '-lPocoNet'
+  test.cpp
+  rentspace_api.vcxproj -> C:\Users\Temi_Ogunsanya\Documents\Dev\CMPE320_Project\rentspace_api\Debug\rentspace_api.exe
+  rentspace_api.vcxproj -> C:\Users\Temi_Ogunsanya\Documents\Dev\CMPE320_Project\rentspace_api\Debug\rentspace_api.pdb (Partial PDB)
